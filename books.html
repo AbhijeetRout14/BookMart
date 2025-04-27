@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Explore a vast collection of books and ebooks with easy navigation and seamless checkout at MyLibrary.">
+    <meta name="keywords" content="library, books, ebooks, online library, book collection, MyLibrary">
+    <meta name="robots" content="index, follow">
+    <title>MyLibrary</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom Navbar Style -->
+    <style>
+        .navbar {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            border-bottom: 3px solid #3e3e3e;
+        }
+
+        .navbar .navbar-brand img {
+            height: 30px;
+        }
+
+        .navbar .nav-link {
+            font-weight: bold;
+        }
+
+        .navbar .dropdown-menu {
+            border: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .dropdown-item {
+            color: #000;
+        }
+
+        .navbar .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="MyLibrary Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ebooks.html">E-Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help & Support</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i> My Cart
+                            <span id="cart-badge" class="badge badge-pill badge-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout.php">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- Books Page Content -->
+    <section id="books" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore Books</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="FB- (1).jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Argumentative Indian : Writings On India</h5>
+                            <p class="card-text">Author: Amartya Sen</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="FB- (2).jpg" class="card-img-top" alt="Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Fall of Civilizations: Stories of Greatness and Decline</h5>
+                            <p class="card-text">Author: Paul Cooper</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="FB- (3).jpg" class="card-img-top" alt="Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Blue Umbrella</h5>
+                            <p class="card-text">Author: Ruskin Bond </p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row of Books -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (1).jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering the Data Paradox: Key to Winning in the AI Age</h5>
+                            <p class="card-text">Author: Nitin Seth</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (2).jpg" class="card-img-top" alt="Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">The 5 AM Club</h5>
+                            <p class="card-text">Author: Robin Sharma</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (3).jpg" class="card-img-top" alt="Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Secrets on Fibonacci Trading: Mastering Fibonacci Techniques In Less Than 3 Days</h5>
+                            <p class="card-text">Author: Frank Miller</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row of Books -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (4).jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Head First Software Architecture: A Learner's Guide to Architectural Thinking (Grayscale Indian Edition)</h5>
+                            <p class="card-text">Author: Raju Gandhi, Mark Richards, Neal Ford</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (5).jpg" class="card-img-top" alt="Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Rich Dad Poor Dad</h5>
+                            <p class="card-text">Author: Robert T. Kiyosaki</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (6).jpg" class="card-img-top" alt="Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Don't Believe Everything You Think: Why Your Thinking Is The Beginning & End Of Suffering</h5>
+                            <p class="card-text">Author: Joseph Nguyen</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Row of Books -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (7).jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">How the World Made the West: A 4,000-Year History</h5>
+                            <p class="card-text">Author: Josephine Quinn </p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (8).jpg" class="card-img-top" alt="Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Art of Social Media: Power Tips</h5>
+                            <p class="card-text">Author: Peg Fitzpatrick, Guy Kawasaki</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (9).jpg" class="card-img-top" alt="Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Fusion Strategy: How Real-Time Data and AI Will Power the Industrial Future </h5>
+                            <p class="card-text">Author: Vijay Govindarajan</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Row of Books -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (10).jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Secrets on Fibonacci Trading: Mastering Fibonacci Techniques In Less Than 3 Days </h5>
+                            <p class="card-text">Author: Justin Hempson-Jones </p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (11).jpg" class="card-img-top" alt="Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">The Art of Laziness: Overcome Procrastination & Improve Your Productivity</h5>
+                            <p class="card-text">Author: Library Mindset </p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="B (12).jpg" class="card-img-top" alt="Book 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Chanakya’s 100 Best Sutras: Ageless Wisdom for Unlocking Your Potential and Achieving Your Goals</h5>
+                            <p class="card-text">Author: Radhakrishnan Pillai</p>
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Us Section -->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <p>Email: mylibrary4all@gmail.com</p>
+                        <p>Phone: 1270015500</p>
+                    </div>
+    
+                    <!-- Copyright Section -->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <div class="text-center p-3">
+                            &copy; 2024 MyLibrary. All rights reserved.
+                        </div>
+                    </div>
+    
+                    <!-- Follow Us Section -->
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="text-uppercase">Follow Us</h5>
+                        <a href="https://www.facebook.com" target="_blank"
+                            class="btn btn-outline-light btn-floating m-1" role="button"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"
+                            class="btn btn-outline-light btn-floating m-1" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"
+                            class="btn btn-outline-light btn-floating m-1" role="button"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/?lang=en" target="_blank"
+                            class="btn btn-outline-light btn-floating m-1" role="button"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com" target="_blank"
+                            class="btn btn-outline-light btn-floating m-1" role="button"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+
+    <!-- Modal for Add to Cart -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Item Added to Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    The item has been successfully added to your cart.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var cartCount = 0;
+            var cartBadge = document.getElementById('cart-badge');
+            var addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            addToCartButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    cartCount++;
+                    cartBadge.textContent = cartCount;
+                    $('#cartModal').modal('show');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
