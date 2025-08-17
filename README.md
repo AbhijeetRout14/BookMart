@@ -1,6 +1,6 @@
-📚 Library Management System
+📚 Book Mart
 
-The Library Management System (LMS) is a web-based application designed to automate and simplify library operations. It helps manage books, members, and transactions efficiently, reducing manual effort and improving overall workflow.
+Book Mart is a web-based application designed to automate and simplify library operations. It helps manage books, members, and transactions efficiently, reducing manual effort and improving overall workflow.
 
 This project provides an intuitive interface for librarians to manage the library and for users to browse, reserve, and track their borrowed books.
 
