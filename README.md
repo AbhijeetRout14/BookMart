@@ -30,8 +30,26 @@ Database: MySQL
 
 Additional Tools: Bootstrap (for UI styling), PHPMyAdmin (for DB management)
 
-<pre> ```plaintext 📂 Project Structure Library-Management-System/ │── index.html # Landing page │── homepage.php # Main dashboard │── register.php # User registration │── login.php # User login (if included) │── books.html # Book listing │── cart.html # Cart functionality │── checkout.html # Checkout process │── feedbackform.php # Feedback system │── suggestionsform.php # Suggestions form │── profile.html # User profile page │── connect.php # Database connection │── scripts.js # Frontend scripts │── style_db.css # DB-specific styling │── styles.css # Global styles │── library video.mp4 # Demo video │── README.md # Documentation └── assets/ # Images, logos, etc. ``` </pre>
-⚡ Installation & Setup
+```plaintext
+📂 Project Structure
+Library-Management-System/
+│── index.html           # Landing page 
+│── homepage.php         # Main dashboard
+│── register.php         # User registration
+│── login.php            # User login (if included)
+│── books.html           # Book listing
+│── cart.html            # Cart functionality
+│── checkout.html        # Checkout process
+│── feedbackform.php     # Feedback system
+│── suggestionsform.php  # Suggestions form
+│── profile.html         # User profile page
+│── connect.php          # Database connection
+│── scripts.js           # Frontend scripts
+│── style_db.css         # DB-specific styling
+│── styles.css           # Global styles
+│── library video.mp4    # Demo video
+│── README.md            # Documentation
+└── assets/              # Images, logos, etc.
 
 Clone the Repository
 
